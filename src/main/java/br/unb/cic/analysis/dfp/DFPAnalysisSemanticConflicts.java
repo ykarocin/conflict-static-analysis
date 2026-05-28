@@ -33,10 +33,15 @@ public abstract class DFPAnalysisSemanticConflicts extends JDFP {
         this.cp = classPath;
         this.depthLimit = depthLimit;
         this.statementsUtils = new StatementsUtil(definition, entrypoints);
+        System.out.println("ESTOU EM DF-INTER");
+        System.out.println(classPath);
+
     }
 
     public DFPAnalysisSemanticConflicts(String classPath, AbstractMergeConflictDefinition definition) {
         this(classPath, definition, 5, new ArrayList<>());
+        System.out.println("ESTOU DF-INTRA");
+        System.out.println(classPath);
     }
 
     public DFPAnalysisSemanticConflicts(String classPath, AbstractMergeConflictDefinition definition, int depthLimit) {

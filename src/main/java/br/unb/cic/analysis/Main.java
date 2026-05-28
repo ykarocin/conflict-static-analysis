@@ -101,6 +101,8 @@ public class Main {
                 }
             }
         }
+        System.out.println("ESTOU NA MAIN");
+        System.out.println(res);
         return res;
     }
 

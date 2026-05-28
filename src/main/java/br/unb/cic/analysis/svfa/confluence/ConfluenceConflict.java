@@ -95,10 +95,10 @@ public class ConfluenceConflict {
                         "\t\t" + "]" + "\n" +
                         "\t" + "}" + "\n" +
                         "}",
-                type, label, this.toString().replaceAll("\n", " "),
-                sinkNode.value().sootUnit().toString().replaceAll("\"", "'"), sinkNode.value().className(), sinkNode.value().method(), sinkNode.value().line(),
-                sourceNode.value().sootUnit().toString().replaceAll("\"", "'"), sourceNode.value().className(), sourceNode.value().method(), sourceNode.value().line(),
-                baseNode.value().sootUnit().toString().replaceAll("\"", "'"), baseNode.value().className(), baseNode.value().method(), baseNode.value().line()
+                type, label, this.toString().replace("\n", " ").replace("\"", "'").replace("\\", ""),
+                sinkNode.value().sootUnit().toString().replace("\"", "'").replace("\\", ""), sinkNode.value().className(), sinkNode.value().method(), sinkNode.value().line(),
+                sourceNode.value().sootUnit().toString().replace("\"", "'").replace("\\", ""), sourceNode.value().className(), sourceNode.value().method(), sourceNode.value().line(),
+                baseNode.value().sootUnit().toString().replace("\"", "'").replace("\\", ""), baseNode.value().className(), baseNode.value().method(), baseNode.value().line()
         );
     }
 
